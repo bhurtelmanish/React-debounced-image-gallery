@@ -1,4 +1,4 @@
-const API_KEY = `28073605-eb5bbf72074ca81ce4c12ce79`;
+const API_KEY = `28073605-eb5bbf72074ca81ce4c12ce79`; //i have exposed it globally
 const API_NAME = "Pixabay API";
 
 const INITIAL_RATE_LIMIT = 6;
