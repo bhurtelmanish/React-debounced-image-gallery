@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto" , "sans-serif";
+  /* transition: 0.1s ease; */
+}
+
+body{
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --navHeight: 70px;
+  --iconFontSize: 1.6rem;
+  --maxWidth: 1150px;
+  --darkBackground: #1a1b1c;
+  --lightColor: rgb(248, 248, 248);
+  --lightBackground: white;
+  --darkColor: black;
+  --grayColor: #8A8B8C;
+  --lightGrayColor: rgb(211, 211, 211);
+  --themeColor: #836AF6;
+  --blueColor: #70B8FF;
+  --pinkColor: #F65CB6;
+}
+
+
+::-webkit-search-cancel-button{
+  display: none;
+}
