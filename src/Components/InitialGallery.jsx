@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { API_KEY, INITIAL_CATEGORY } from '../assets/Data';
 import axios from 'axios';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import Loader from './Loader';
 import '../index.css'
 
@@ -40,7 +39,6 @@ const Gallery = ({ searchQueryValue, setSearchQueryValue, imageLimit, imageType 
   ) : (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-3 py-4 justify-center">
     {initialImages.map((image, index) => (
-      <Link key={index} to={`/imagedetails/${index}`}>
         <div
           key={index}
           className="overflow-hidden rounded-xl border-[1px] dark:border-slate-600 relative group h-full lg:h-full"  // Increased height
@@ -69,7 +67,6 @@ const Gallery = ({ searchQueryValue, setSearchQueryValue, imageLimit, imageType 
             </p>
           </motion.div>
         </div>
-      </Link>
     ))}
   </div>
   
